@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.appWrapper {
+  background: rgb(59, 106, 238);
+}
+
+.appContainer {
+  margin: 0 auto;
+  max-width: 1280px;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 7px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  padding: 30px;
+  row-gap: 50px;
+  justify-items: center;
+
+  @media (max-width: 1273px) {
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      ". ."
+      ". .";
+  }
+
+  @media (max-width:800px) {
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "."
+      ". ";
+  }
+}
+
+.button {
+  border-radius: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  background: rgb(245, 245, 245);
+  width: 350px;
+  height: 350px;
+  color: rgb(44, 44, 44);
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+
+  &:hover {
+    border-radius: 100%;
+    background: rgb(59, 106, 238);
+    color: white;
+    font-size: 45px;
+  }
+
+  @media (max-width: 407px) {
+    width: calc(100% - 10px);
+    font-size: calc(40px - 2px);
+  }
+}
+
+.emptyNotes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 370;
+  height: 350px;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: rgb(77, 77, 77);
+    text-align: center;
+  }
+
+  img {
+    height: 70px;
+    width: 70px;
+  }
+}

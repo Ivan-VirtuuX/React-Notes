@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/React-Notes/static/css/main.adbc53cd.css",
-    "main.js": "/React-Notes/static/js/main.2a8d1410.js",
+    "main.js": "/React-Notes/static/js/main.56a57e42.js",
     "static/media/emptyNotesEmoji.png": "/React-Notes/static/media/emptyNotesEmoji.0b9caec3b0b75dbffbba.png",
     "index.html": "/React-Notes/index.html",
     "main.adbc53cd.css.map": "/React-Notes/static/css/main.adbc53cd.css.map",
-    "main.2a8d1410.js.map": "/React-Notes/static/js/main.2a8d1410.js.map"
+    "main.56a57e42.js.map": "/React-Notes/static/js/main.56a57e42.js.map"
   },
   "entrypoints": [
     "static/css/main.adbc53cd.css",
-    "static/js/main.2a8d1410.js"
+    "static/js/main.56a57e42.js"
   ]
 }
